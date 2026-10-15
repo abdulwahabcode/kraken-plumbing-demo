@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kraken Plumbing | Surprise, AZ</title>
+<meta name="description" content="Plumbing in Surprise, AZ. Drain cleaning, water heaters, leak detection, emergency repairs. Free estimates — Kraken Plumbing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --deep:#12232E; --deep2:#0D1B24; --ocean:#1E3A4C; --teal:#3E7A8C;
+  --brass:#C79C5A; --brassd:#a37f42; --off:#EDEAE2; --mut:#A9B8C2;
+}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{font-family:'Manrope',system-ui,sans-serif;background:var(--deep);color:var(--off);line-height:1.65}
+a{color:inherit}
+nav{position:sticky;top:0;z-index:50;background:rgba(13,27,36,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(199,156,90,.22)}
+.nav-inner{max-width:1140px;margin:0 auto;padding:.8rem 1.1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:800;font-size:1.05rem;text-decoration:none}
+.brand svg{width:32px;height:32px;flex:none}
+.nav-links{display:flex;gap:1.35rem;align-items:center}
+.nav-links a{text-decoration:none;font-size:.9rem;font-weight:600;color:var(--mut)}
+.nav-links a:hover{color:var(--brass)}
+.cta-btn{background:var(--brass);color:#10150f;text-decoration:none;font-weight:800;font-size:.88rem;padding:.65rem 1.3rem;border-radius:10px;display:inline-block;border:none;cursor:pointer}
+.cta-btn:hover{background:#d6b06e}
+.burger{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--off);line-height:1}
+@media(max-width:760px){
+  .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--deep2);flex-direction:column;align-items:stretch;padding:0;max-height:0;overflow:hidden;transition:max-height .3s ease}
+  .nav-links.open{max-height:360px}
+  .nav-links a{padding:.85rem 1.3rem;border-top:1px solid rgba(169,184,194,.15)}
+  .nav-links .cta-btn{margin:.9rem 1.3rem 1.2rem;text-align:center}
+  .burger{display:block}
+}
+.hero{position:relative;overflow:hidden;background:radial-gradient(1000px 500px at 70% -10%,var(--ocean),var(--deep) 70%)}
+.hero-grid{max-width:1140px;margin:0 auto;padding:3.6rem 1.1rem 3rem;display:grid;gap:2rem;align-items:center;position:relative}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.1fr .9fr;padding:5rem 1.1rem 4rem}}
+.emg{display:inline-flex;align-items:center;gap:.5rem;background:rgba(199,156,90,.14);border:1px solid rgba(199,156,90,.5);color:var(--brass);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;padding:.45rem 1rem;border-radius:999px;margin-bottom:1.1rem}
+.emg .pulse{width:9px;height:9px;border-radius:50%;background:var(--brass);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-size:clamp(2.3rem,7vw,4rem);line-height:1.06;font-weight:800;margin-bottom:1rem}
+.hero h1 .b{color:var(--brass)}
+.hero p.lede{font-size:1.06rem;color:var(--mut);max-width:33rem;margin-bottom:1.7rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-bottom:1.5rem}
+.ghost-btn{border:1.5px solid rgba(199,156,90,.6);color:var(--off);text-decoration:none;font-weight:700;padding:.62rem 1.2rem;border-radius:10px;font-size:.88rem}
+.ghost-btn:hover{background:rgba(199,156,90,.12)}
+.trust{display:flex;flex-wrap:wrap;gap:.5rem 1.3rem;font-size:.86rem;color:var(--mut)}
+.trust span::before{content:"✓ ";color:var(--brass);font-weight:800}
+.kraken-art{display:flex;justify-content:center}
+.kraken-art svg{width:min(300px,74vw);height:auto}
+.wave{display:block;width:100%;height:46px;margin-bottom:-1px}
+section{padding:3.4rem 1.1rem}
+.wrap{max-width:1140px;margin:0 auto}
+.sec-head{margin-bottom:2.1rem}
+.sec-head .kicker{font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);font-weight:800;margin-bottom:.55rem}
+.sec-head h2{font-size:clamp(1.75rem,4.5vw,2.5rem);font-weight:800;line-height:1.15}
+.sec-head p{color:var(--mut);max-width:40rem;margin-top:.6rem}
+#services{background:var(--deep2)}
+.svc-grid{display:grid;gap:1.1rem}
+@media(min-width:680px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1020px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
+.svc{background:linear-gradient(160deg,#162b3a,#101f2b);border:1px solid rgba(62,122,140,.28);border-radius:16px;padding:1.6rem 1.5rem;position:relative;overflow:hidden}
+.svc::after{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--brass);opacity:0;transition:opacity .25s}
+.svc:hover::after{opacity:1}
+.svc .ic{width:46px;height:46px;border-radius:12px;background:rgba(199,156,90,.14);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.svc .ic svg{width:24px;height:24px;stroke:var(--brass);fill:none;stroke-width:1.9}
+.svc h3{font-size:1.1rem;font-weight:800;margin-bottom:.45rem}
+.svc p{font-size:.94rem;color:var(--mut)}
+/* EMERGENCY BANNER */
+#emg{background:var(--brass);color:#141310}
+#emg .wrap{display:grid;gap:1rem;align-items:center}
+@media(min-width:820px){#emg .wrap{grid-template-columns:1fr auto}}
+#emg h2{font-size:clamp(1.4rem,3.6vw,2rem);font-weight:800}
+#emg p{font-weight:600;opacity:.85}
+#emg .cta-btn{background:#141310;color:#F3EBDB}
+/* WHY */
+.why-grid{display:grid;gap:1rem}
+@media(min-width:760px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+.why{display:flex;gap:1.1rem;background:rgba(62,122,140,.10);border:1px solid rgba(62,122,140,.3);border-radius:14px;padding:1.5rem}
+.why .badge{flex:none;width:48px;height:48px;border-radius:14px;background:var(--brass);color:#141310;font-weight:800;font-size:1.15rem;display:flex;align-items:center;justify-content:center}
+.why h3{font-size:1.05rem;font-weight:800;margin-bottom:.35rem}
+.why p{font-size:.93rem;color:var(--mut)}
+/* AREA */
+#area{background:var(--deep2)}
+.area-grid{display:grid;gap:1.6rem;align-items:start}
+@media(min-width:860px){.area-grid{grid-template-columns:1fr 1fr}}
+.towns{display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem}
+.towns span{background:rgba(62,122,140,.14);border:1px solid rgba(62,122,140,.35);padding:.6rem .9rem;border-radius:10px;font-size:.9rem;font-weight:600;text-align:center}
+.towns span.home{background:var(--brass);border-color:var(--brass);color:#141310;font-weight:800}
+.area-note{color:var(--mut);font-size:.95rem}
+/* CONTACT */
+.contact-grid{display:grid;gap:2rem}
+@media(min-width:880px){.contact-grid{grid-template-columns:.9fr 1.1fr}}
+.contact-info p{margin-bottom:1rem;color:var(--mut)}
+.contact-info strong{color:var(--off)}
+.contact-info a{color:var(--brass);text-decoration:none;font-weight:700}
+form.quote{background:rgba(0,0,0,.3);border:1px solid rgba(199,156,90,.3);border-radius:16px;padding:1.7rem}
+form.quote label{display:block;font-size:.82rem;font-weight:700;letter-spacing:.06em;color:var(--brass);margin-bottom:.35rem}
+form.quote input,form.quote select,form.quote textarea{width:100%;max-width:100%;padding:.72rem .95rem;border-radius:10px;border:1px solid rgba(169,184,194,.25);background:#0a141c;color:var(--off);font-family:inherit;font-size:.95rem;margin-bottom:1rem}
+form.quote select option{color:#141310}
+form.quote textarea{min-height:110px;resize:vertical}
+footer{background:#080f15;padding:1.7rem 1.1rem;text-align:center;font-size:.85rem;color:var(--mut)}
+footer .credit{margin-top:.4rem;opacity:.55;font-size:.76rem;letter-spacing:.08em}
+footer a{color:var(--brass);text-decoration:none}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c-4 0-7 3-7 7 0 2 1 4 2.5 5C8 18 5 22 4 28c3-1 6-3 7.5-5.5C12 24 13 25 14 26c.5-3 1-6 2-8 1 2 1.5 5 2 8 1-1 2-2 2.5-3.5C22 25 25 27 28 28c-1-6-4-10-7.5-12C22 15 23 13 23 11c0-4-3-7-7-7z" fill="#C79C5A"/><circle cx="13.5" cy="10" r="1.6" fill="#12232E"/><circle cx="18.5" cy="10" r="1.6" fill="#12232E"/></svg>
+      Kraken Plumbing
+    </a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="navlinks">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+      <a class="cta-btn" href="#contact">Get a Free Quote</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-grid">
+    <div>
+      <span class="emg"><span class="pulse"></span> Emergency service · Surprise, AZ</span>
+      <h1>We <span class="b">wrestle</span> your plumbing problems.</h1>
+      <p class="lede">Kraken Plumbing handles the leaks, clogs, and cold showers other plumbers dread — fast, fair, and done right the first time in Surprise and the West Valley.</p>
+      <div class="hero-ctas">
+        <a class="cta-btn" href="#contact">Get a Free Quote</a>
+        <a class="ghost-btn" href="mailto:krakenplumbingaz@gmail.com?subject=Free%20Quote%20Request%20—%20Kraken%20Plumbing">Email Us</a>
+      </div>
+      <div class="trust">
+        <span>Free estimates</span>
+        <span>Upfront pricing</span>
+        <span>Same-day service</span>
+      </div>
+    </div>
+    <div class="kraken-art" aria-hidden="true">
+      <svg viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="86" fill="none" stroke="#3E7A8C" stroke-width="2"/>
+        <circle cx="100" cy="100" r="72" fill="#0D1B24"/>
+        <path d="M100 45c-16 0-26 12-26 26 0 8 3 15 9 20-10 6-18 16-21 30 10-4 19-10 24-18 2 4 6 8 10 10 2-10 3-20 4-28 1 8 2 18 4 28 4-2 8-6 10-10 5 8 14 14 24 18-3-14-11-24-21-30 6-5 9-12 9-20 0-14-10-26-26-26z" fill="#C79C5A" opacity=".9"/>
+        <path d="M60 150c8-10 22-14 40-14M140 150c-8-10-22-14-40-14" stroke="#3E7A8C" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <path d="M30 165c25-6 50-8 70-8s45 2 70 8" stroke="#3E7A8C" stroke-width="4" fill="none" stroke-linecap="round" opacity=".6"/>
+      </svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 C200 5 400 45 600 25 C800 5 1000 40 1200 20 L1200 46 L0 46 Z" fill="#0D1B24"/></svg>
+</header>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">Services</div>
+      <h2>No job too deep</h2>
+      <p>From dripping faucets to full repipes — one call and the Kraken takes it from there.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c-4 5-6 9-6 13a6 6 0 0 0 12 0c0-4-2-8-6-13z"/></svg></div>
+        <h3>Drain Cleaning</h3>
+        <p>Slow sinks, gurgling tubs, backed-up mains — cleared fast with professional augers and hydro-jetting.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5M4 14h16v7H4z"/></svg></div>
+        <h3>Water Heater Install &amp; Repair</h3>
+        <p>No hot water? We repair and replace tank and tankless heaters sized right for Arizona homes.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></svg></div>
+        <h3>Leak Detection</h3>
+        <p>Hidden leaks found without tearing your house apart — then fixed cleanly, the first time.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h16M6 12V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6M8 20h8"/></svg></div>
+        <h3>Fixture Installation</h3>
+        <p>Faucets, toilets, garbage disposals, shower valves — installed neatly and tested before we leave.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 16c3-2 6-2 9 0s6 2 9 0M3 20c3-2 6-2 9 0s6 2 9 0M12 3v10"/></svg></div>
+        <h3>Sewer Line Services</h3>
+        <p>Camera inspections, spot repairs, and full sewer line replacement — with straight answers on what you actually need.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3L2 20h20zM12 10v5M12 17.5v.5"/></svg></div>
+        <h3>Emergency Repairs</h3>
+        <p>Burst pipe at midnight? Water where it shouldn't be? Call — emergency service when it can't wait.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="emg">
+  <div class="wrap reveal">
+    <div>
+      <h2>Plumbing emergency right now?</h2>
+      <p>Don't wait on a leak — shut off the water and reach out. We'll get you sorted.</p>
+    </div>
+    <a class="cta-btn" href="mailto:krakenplumbingaz@gmail.com?subject=EMERGENCY%20—%20Kraken%20Plumbing">Email Us Now</a>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">Why Kraken</div>
+      <h2>Eight arms. Zero excuses.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal"><div class="badge">1</div><div><h3>Upfront, honest pricing</h3><p>You approve the price before any work starts. No hourly mysteries, no surprise line items.</p></div></div>
+      <div class="why reveal"><div class="badge">2</div><div><h3>Same-day service</h3><p>Most jobs scheduled the day you call. Emergencies jump the line — that's what we're here for.</p></div></div>
+      <div class="why reveal"><div class="badge">3</div><div><h3>Clean work, guaranteed</h3><p>Shoe covers, drop cloths, and a full clean-up — your home looks untouched when we leave.</p></div></div>
+      <div class="why reveal"><div class="badge">4</div><div><h3>West Valley local</h3><p>Based in Surprise. We know the hard water, the slab foundations, and the older neighborhoods.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">Service area</div>
+      <h2>Serving Surprise &amp; the West Valley</h2>
+    </div>
+    <div class="area-grid">
+      <div class="towns reveal">
+        <span class="home">Surprise</span><span>El Mirage</span><span>Sun City</span><span>Peoria</span><span>Glendale</span><span>Avondale</span>
+      </div>
+      <p class="area-note reveal">Not sure you're in range? Email us your address — if we're nearby, we'll make it work.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kicker">Get in touch</div>
+      <h2>Get your free quote</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p><strong>Email:</strong><br><a href="mailto:krakenplumbingaz@gmail.com">krakenplumbingaz@gmail.com</a></p>
+        <p><strong>Location:</strong><br>Surprise, Arizona</p>
+        <p><strong>Hours:</strong><br>Mon–Fri, 8am–6pm · Emergency service available</p>
+        <p>Describe the problem and your address — most quotes go out within a few hours.</p>
+      </div>
+      <form class="quote reveal" onsubmit="return sendQuote(event)">
+        <label for="qn">Your name</label>
+        <input id="qn" name="name" required placeholder="Your full name">
+        <label for="qp">Phone</label>
+        <input id="qp" name="phone" type="tel" placeholder="Your phone number">
+        <label for="qs">Service needed</label>
+        <select id="qs" name="service">
+          <option>Drain cleaning</option>
+          <option>Water heater install / repair</option>
+          <option>Leak detection</option>
+          <option>Fixture installation</option>
+          <option>Sewer line services</option>
+          <option>Emergency repair</option>
+          <option>Other</option>
+        </select>
+        <label for="qm">What's going on?</label>
+        <textarea id="qm" name="message" placeholder="Where's the problem? When did it start? Your address…"></textarea>
+        <button class="cta-btn" type="submit" style="width:100%">Send Quote Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Kraken Plumbing · Surprise, AZ · <a href="mailto:krakenplumbingaz@gmail.com">krakenplumbingaz@gmail.com</a>
+  <div class="credit">Demo by Wahab Codes</div>
+</footer>
+
+<script>
+function sendQuote(e){
+  e.preventDefault();
+  var n=document.getElementById('qn').value,
+      p=document.getElementById('qp').value,
+      s=document.getElementById('qs').value,
+      m=document.getElementById('qm').value;
+  var body="Name: "+n+"%0D%0APhone: "+p+"%0D%0AService: "+encodeURIComponent(s)+"%0D%0A%0D%0A"+encodeURIComponent(m);
+  window.location.href="mailto:krakenplumbingaz@gmail.com?subject="+encodeURIComponent("Free Quote Request — "+n+" ("+s+")")+"&body="+body;
+  return false;
+}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+document.querySelectorAll('.nav-links a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('navlinks').classList.remove('open')})});
+</script>
+</body>
+</html>
